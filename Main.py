@@ -63,6 +63,9 @@ def main():
     dt_results = train_decision_tree(X_train, X_test, y_train, y_test)
     display_results(dt_results, 'Decision Tree')
 
+    #Train and evaluate Multi Layer Perception
+    mlp_results = train_MLP(X_train_lr, X_test_lr, y_train_lr, y_test_lr)
+    display_results(mlp_results, 'Multi Layer Perception')
 
 if __name__ == '__main__':
     main()
